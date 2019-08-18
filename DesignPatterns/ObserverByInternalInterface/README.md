@@ -1,5 +1,5 @@
 # 通过C#的内置观察者接口实现观察者模式
-**##1. 接口介绍**
+**1. 接口介绍**
 
 C#内部提供了IObservable<T>和IObserver<T>两个泛型接口，IObservable是可观察的，就是主题（Subject）要实现的接口，IObserver就是观察者需要实现的接口，接口定义如下：
 ```
@@ -25,7 +25,9 @@ public interface IObserver<in T>
 **2. Demo背景**
 
 这里与[上一篇](https://www.cnblogs.com/donyblog/p/11370690.html)一致：设计一个气象观测站，测量温度、湿度、气压等，会有多种公告板如气温布告板，舒适度布告板，天气预报布告板等等。每当天气数据变化时，这些布告板的数据就需要相应自动更新。
+
 **3. 代码设计**
+
 + 首先建一个WeatherData，这是主题向观察者传递的数据。
 ```
 public struct WeatherData
@@ -166,4 +168,8 @@ class Program
     }
 }
 ```
+![运行效果](https://img2018.cnblogs.com/blog/1430055/201908/1430055-20190818182021923-633653193.png)
 
+**4. 源码地址**
+
+[https://github.com/DonyGu/DesignPatterns](https://github.com/DonyGu/DesignPatterns)
