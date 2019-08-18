@@ -14,6 +14,8 @@ namespace ObserverByInternalInterface
         {
             observers = new List<IObserver<WeatherData>>();
         }
+        //定义一个可销毁的内部类，所以继承自IDisposable接口
+        //观察者注册时生成对象，注销时，调用Dispose()，取消订阅并释放资源
         private class Unsubscriber : IDisposable
         {
             private List<IObserver<WeatherData>> _observers;
@@ -32,16 +34,18 @@ namespace ObserverByInternalInterface
                 }
             }
         }
+
+        //通知提供程序观察程序将接收通知。
         public IDisposable Subscribe(IObserver<WeatherData> observer)
         {
-            //它允许观察程序在提供程序完成发送通知前停止接收通知。
             if (!observers.Contains(observer))
             {
                 observers.Add(observer);
             }
+            //返回可销毁的内部类，当观察者取消订阅时，调用该类的Dispose(),释放资源
             return new Unsubscriber(observers, observer);
         }
-
+        //通知所有观察者更新数据数据
         public void SendWeatherData(Nullable<WeatherData> weather)
         {
             foreach (var observer in observers)
