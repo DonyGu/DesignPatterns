@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{6D4D1643-D9A2-4DD4-A1C8-4AE07967E370}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1Observer", "Observer\1.1Observer.csproj", "{6D4D1643-D9A2-4DD4-A1C8-4AE07967E370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverByInternalInterface", "ObserverByInternalInterface\ObserverByInternalInterface.csproj", "{A1C7DF63-5215-4553-B8D3-ED36EFA56F29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2ObserverByInternalInterface", "ObserverByInternalInterface\1.2ObserverByInternalInterface.csproj", "{A1C7DF63-5215-4553-B8D3-ED36EFA56F29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Decorator", "Decorator\2.Decorator.csproj", "{90A4D6A6-26A4-4A28-B18E-828E67389E4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A1C7DF63-5215-4553-B8D3-ED36EFA56F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C7DF63-5215-4553-B8D3-ED36EFA56F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C7DF63-5215-4553-B8D3-ED36EFA56F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A4D6A6-26A4-4A28-B18E-828E67389E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A4D6A6-26A4-4A28-B18E-828E67389E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A4D6A6-26A4-4A28-B18E-828E67389E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A4D6A6-26A4-4A28-B18E-828E67389E4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
