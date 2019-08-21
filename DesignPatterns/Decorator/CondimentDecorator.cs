@@ -8,10 +8,10 @@ namespace Decorator
 {
     public abstract class CondimentDecorator : MilkyTea
     {
+        public MilkyTea milkyTea;
     }
     public class Oats : CondimentDecorator
     {
-        MilkyTea milkyTea;
         public Oats(MilkyTea milkyTea)
         {
             this.milkyTea = milkyTea;
@@ -27,7 +27,6 @@ namespace Decorator
     }
     public class Pudding : CondimentDecorator
     {
-        MilkyTea milkyTea;
         public Pudding(MilkyTea milkyTea)
         {
             this.milkyTea = milkyTea;

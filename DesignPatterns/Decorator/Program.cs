@@ -16,7 +16,6 @@ namespace Decorator
             Console.WriteLine($"{((Pudding)tea).GetDescription()}:￥{tea.GetFee()}。");
             tea = new Oats(tea);
             Console.WriteLine($"{tea.GetDescription()}:￥{tea.GetFee()}。");
-
         }
     }
 }
