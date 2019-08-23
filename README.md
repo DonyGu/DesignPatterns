@@ -19,7 +19,7 @@
     + 装饰（Decorator）角色：是一个抽象类，继承自Component，同时持有一个对Component实例对象的引用。
     + 具体装饰（ConcreteComponent）角色：具体的装饰者对象，是Decorator的实现类，负责给ConcreteComponent附加责任。
 + 优点：为设计注入弹性。满足开闭原则，方便拓展。
-+ 确点： 在设计中会加入大量小类。
++ 缺点： 在设计中会加入大量小类。
 
 
 # 设计原则
